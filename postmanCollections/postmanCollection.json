@@ -1,0 +1,192 @@
+{
+	"info": {
+		"_postman_id": "fd97cdc5-18a8-49f4-9b58-daaf9b0a4fb3",
+		"name": "Proyecto Back",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41283340"
+	},
+	"item": [
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "Obtener Productos",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/api/products/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"products",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Generar Producto",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Producto 1\",\r\n    \"description\": \"Descripción del producto 1\",\r\n    \"code\": \"1234\",\r\n    \"price\": 10.99,\r\n    \"status\": true,\r\n    \"stock\": 50,\r\n    \"category\": \"Electrónica\",\r\n    \"thumbnails\": []\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/api/products",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modificar Producto",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Agenda 2025\",\r\n    \"description\": \"Agenda semana a la vista, año 2025\",\r\n    \"code\": \"001\",\r\n    \"price\": 15,\r\n    \"status\": true,\r\n    \"stock\": 18,\r\n    \"category\": \"Agenda\",\r\n    \"thumbnails\": [http://localhost:8080/static/images/agenda1.png]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/api/products/7b07a692-feee-4a88-87da-bc4a776951e0",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"products",
+								"7b07a692-feee-4a88-87da-bc4a776951e0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar producto",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Producto 1\",\r\n    \"description\": \"Descripción del producto 1\",\r\n    \"code\": \"1234\",\r\n    \"price\": 10.99,\r\n    \"status\": true,\r\n    \"stock\": 50,\r\n    \"category\": \"Electrónica\",\r\n    \"thumbnails\": []\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BASE_URL}}/api/products",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Carts",
+			"item": [
+				{
+					"name": "Nuevo Carrito",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/api/carts/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"carts",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Ver productos en carrito",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/api/carts/",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"carts",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Agregar producto al carrito",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{BASE_URL}}/api/carts/7b07a692-feee-4a88-87da-bc4a776951e0/product/7b07a692-feee-4a88-87da-bc4a776951e0",
+							"host": [
+								"{{BASE_URL}}"
+							],
+							"path": [
+								"api",
+								"carts",
+								"7b07a692-feee-4a88-87da-bc4a776951e0",
+								"product",
+								"7b07a692-feee-4a88-87da-bc4a776951e0"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

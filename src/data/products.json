@@ -1,0 +1,28 @@
+[
+	{
+		"id": "7b07a692-feee-4a88-87da-bc4a776951e0",
+		"title": "Agenda 2025",
+		"description": "Agenda semana a la vista, año 2025",
+		"code": "001",
+		"price": 15,
+		"status": true,
+		"stock": 18,
+		"category": "Agenda",
+		"thumbnails": [
+			"http://localhost:8080/public/images/agenda1.png"
+		]
+	},
+	{
+		"id": "31dcd11d-7f87-40cf-be32-1cc45df7eec3",
+		"title": "Lapicera",
+		"description": "Lapicera retractil, color azul, cuerpo de madera",
+		"code": "005",
+		"price": 900,
+		"status": true,
+		"stock": 70,
+		"category": "Accesorios",
+		"thumbnails": [
+			"http://localhost:8080/public/images/lapicera.png"
+		]
+	}
+]
