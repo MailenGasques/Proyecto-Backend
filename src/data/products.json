@@ -24,5 +24,44 @@
 		"thumbnails": [
 			"http://localhost:8080/public/images/lapicera.png"
 		]
+	},
+	{
+		"id": "53d1998a-2497-4533-8a03-bcd46ee3ca98",
+		"title": "Cuaderno A5",
+		"description": "Cuaderno espiralado, tamaño A5, hojas rayadas, realzado con papel reciclado",
+		"code": "010",
+		"price": 5000,
+		"status": true,
+		"stock": 15,
+		"category": "Cuadernos",
+		"thumbnails": [
+			"http://localhost:8080/public/images/cuadernoA5ray.png"
+		]
+	},
+	{
+		"id": "2a8a1650-ec9a-4c45-af1e-dd8174489ba6",
+		"title": "Cuaderno Universitario",
+		"description": "Cuaderno espiralado, tamaño A4, hojas rayadas o cuadriculadas, realzado con papel reciclado, tapa blanda",
+		"code": "009",
+		"price": 7500,
+		"status": true,
+		"stock": 20,
+		"category": "Cuadernos",
+		"thumbnails": [
+			"http://localhost:8080/public/images/cuadernouniversitario.png"
+		]
+	},
+	{
+		"id": "11f54620-b21f-46db-b6aa-98d244392041",
+		"title": "Lapiz Plantable",
+		"description": "Lapiz ecologco con semllas en su parte posterior para poder ser plantadas.",
+		"code": "008",
+		"price": 1200,
+		"status": true,
+		"stock": 75,
+		"category": "Accesorios",
+		"thumbnails": [
+			"http://localhost:8080/public/images/lapzplantable.png"
+		]
 	}
 ]
